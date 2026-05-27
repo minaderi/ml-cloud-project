@@ -1,36 +1,65 @@
-# Cloud-Based Machine Learning Traffic Prediction System
+# ML Cloud Project
 
-## Project Description
-This project is a cloud-based machine learning application developed using Python, Flask, Scikit-learn, and AWS S3.
+## Proje Hakkında
+Bu proje, makine öğrenmesi kullanarak trafik yoğunluğu tahmini yapan bulut tabanlı bir uygulamadır.
 
-The system predicts traffic density based on temperature and humidity values.
-
-## Technologies Used
+Sistem:
 - Python
 - Flask
 - Scikit-learn
-- Pandas
+- AWS EC2
+- AWS S3
+- GitHub
+
+teknolojileri kullanılarak geliştirilmiştir.
+
+---
+
+## Projenin Amacı
+
+Sıcaklık ve nem verilerini analiz ederek trafik yoğunluğunu tahmin eden bir makine öğrenmesi modeli geliştirmek ve bu modeli AWS bulut ortamında çalıştırmaktır.
+
+---
+
+## Kullanılan Teknolojiler
+
+### Backend
+- Python
+- Flask
+
+### Machine Learning
+- Scikit-learn
+- RandomForestClassifier
+
+### Cloud Services
+- AWS EC2
 - AWS S3
 
-## Features
-- Traffic density prediction
-- REST API service
-- Machine learning model training
-- Cloud storage integration with AWS S3
+### Version Control
+- GitHub
 
-## Example API Request
+---
 
-POST /predict
+## Makine Öğrenmesi Modeli
 
-Example JSON:
+Projede Random Forest algoritması kullanılmıştır.
 
-{
-  "temperature": 32,
-  "humidity": 78
-}
+Model:
+- sıcaklık
+- nem
 
-## Example Response
+verilerini kullanarak trafik yoğunluğunu tahmin etmektedir.
 
-{
-  "prediction": "high"
-}
+Tahmin sınıfları:
+- low
+- medium
+- high
+
+---
+
+## API Endpoint
+
+### Ana Sayfa
+
+```bash
+GET /
